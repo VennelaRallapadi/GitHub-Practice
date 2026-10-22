@@ -11,4 +11,6 @@ jobs:
 
       - name: Run a shell script
         run: |
-        echo "Hello from GitHub Actions"
+          echo "Hello from GitHub Actions"
+          ./scripts/setup.sh
+
