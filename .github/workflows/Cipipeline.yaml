@@ -1,0 +1,17 @@
+name: CI Pipeline
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Install Dependencies
+        uses: npm Install
+      
+      - name: Run Tests
+        uses: npm Tests
+
