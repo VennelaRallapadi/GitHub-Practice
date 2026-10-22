@@ -1,0 +1,14 @@
+name: Run Shell Script Example
+
+on: [push]
+
+jobs:
+  run-script:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v3
+
+      - name: Run a shell script
+        run: |
+        echo "Hello from GitHub Actions"
