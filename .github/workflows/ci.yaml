@@ -1,0 +1,14 @@
+name: Example Workflow
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      # Using an official action
+      - name: Checkout Code
+        uses: actions/checkout@v3
+
+      # Using a shell command
+      - name: Say Hello
+        run: echo "Hello from GitHub Actions!"
